@@ -1,0 +1,31 @@
+<div class="container">
+  <div>
+    <input type="file" accept=".csv" (change)="convertFile($event)" id="fileInput" />
+  </div>
+  <span [hidden]="isFileSupported" class="error">Only csv file format is allowed</span>
+
+  <div class="input-container" *ngIf="headerInfo.length > 0">
+    <input type="number" [(ngModel)]="searchTxt" placeholder="Filter by Issue Count" />
+  </div>
+
+  <div class="tcontainer">
+    <table>
+      <thead>
+        <tr>
+          <th *ngFor="let title of headerInfo">{{title | uppercase}}</th>
+        </tr>
+      </thead>
+      <tbody>        
+        <!--  orderBy:'Issuecount' -->        
+        <tr *ngFor="let data of tableInfo | customFilter: ['Issuecount', searchTxt]">
+          <td>{{data.Firstname | titlecase}}</td>
+          <td>{{data.Surname | titlecase}}</td>
+          <td>{{data.Issuecount}}</td>
+          <td>{{data.Dateofbirth | date : 'dd/MM/yyyy'}}</td>
+        </tr>
+      </tbody>
+    </table>
+    <div *ngIf = "((tableInfo | customFilter: ['Issuecount', searchTxt]).length == 0 && headerInfo.length > 0)" class="empty">No record(s) found</div>
+  </div>
+
+</div>
