@@ -1,0 +1,80 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    font-size: 100%;
+    font-family:"Noto Serif","DejaVu Serif",serif;
+}
+
+.error {
+    color: red;
+}
+
+.pad {
+    padding: 1em 0em;
+}
+.success {
+    color: green;
+    font-size: 1.5em;
+}
+
+span {
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+h1, h2 {
+    font-family:"Open Sans","DejaVu Sans",sans-serif;
+    font-weight:300;
+    font-style:normal;
+    color:#ba3925;
+    margin-top:0.5em;
+    margin-bottom:.5em;
+    line-height:1.0125em
+}
+
+
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+    width: 100%;
+    font-size: 1em;
+    
+
+    tr {
+        th, td {
+            border: 1px solid #dedede;
+            display:table-cell;
+            line-height:1.6;
+            font-size:inherit;
+            color:rgba(0,0,0,.8);
+            text-align: left;
+        }
+
+        td {
+            color: red;
+        }
+    }
+
+    thead, tfoot {
+        background:#f7f8f7;
+        font-weight:bold;
+        tr {
+            th {
+                padding:.5em .625em .625em;
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            td {
+                padding:.5625em .625em;
+            }
+        }
+    }
+
+    tr:nth-of-type(even){
+        background:#f8f8f7
+    }    
+}
