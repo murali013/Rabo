@@ -1,24 +1,14 @@
-# Prerequisite
-1. NodeJS
-2. NPM
-
 # Steps to run the application
-
-# Before running the FE, start the BE server:
-1. Go to Command Promt & change to the BE base directory (e.g) C:/BE/StatementProcessServer
-2. node server.js (It will listen at 5000 port)
-
-# Run the FE:
-1. Go to Command Prompt & move to FE base directory (e.g) C:/BE/CustomerStatement
+1. Go to Command Prompt & move to the base directory (e.g) C:\Rabo\FE\Rabo
 2. npm install (It will install all dependencies)
 3. ng serve (or) npm run start
-
+4. Go to browser & open http://localhost:4200
 
 # Steps to run unit testing
-1. Go to base directory (e.g) C:/BE/CustomerStatement
+1. Go to base directory (e.g) C:\Rabo\FE\Rabo
 2. ng test (or) npm run test
 
-# Note: Attached the application & unit testing screen shot for your reference.
+# Note: Attached the application & unit testing screen shots for your reference.
 
 # Rabo
 
